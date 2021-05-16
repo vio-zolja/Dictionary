@@ -1,21 +1,14 @@
 import React, {useState} from "react";
 import axios from "axios"
+import Ergebnisse from "./results"
 
 export default function Dictionary(){
     let [ready,setReady] = useState(false)
     let [keyword, setKeyword] = useState("")
-    let [data,setData] = useState("")
+    let [results,setResults] = useState(null)
 
     function handleResponse(response){
-      console.log(response);
-      setData({
-        word: response.data[0].word,
-        term: response.data[0].meanings[0].partOfSpeech,
-        meaning: response.data[0].meanings[0].definitions[0].definition,
-
-        term2: response.data[0].meanings[1].partOfSpeech,
-        meaning2: response.data[0].meanings[1].definitions[0].definition,
-      })
+      setResults(response.data[0])
     }
 
     function search(event){
@@ -42,18 +35,7 @@ if(ready){
 
         </div>
 
-        <header>
-          
-          <h1><p className="wordd">{data.word}</p></h1>
-          <p className="wordkind"> {data.term}</p>
-          <p className="definition">{data.meaning}</p>
-          <br />
-          <p className="wordkind">{data.term2}</p>
-          <p className="definition">{data.meaning2}</p>
-
-
-        </header>
-
+        <Ergebnisse props={results} />
       </div>
     )
 
