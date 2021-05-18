@@ -30,12 +30,12 @@ if(ready){
         <div className="form">
 
           <form onSubmit={search}>
-            <input onChange={updateKeyword} type="search" placeholder="Type here..." />
+          <h2>Dictionary</h2>
+            <input className="input1" onChange={updateKeyword} type="search" placeholder="Type here..." />
             <input type="submit" value="Search" />
           </form>
 
         </div>
-
         <Ergebnisse results={results} />
       </div>
     )
@@ -46,11 +46,12 @@ if(ready){
   return(
     <div className="form">
       <form onSubmit={search}>
-        <input onChange={updateKeyword} type="search" placeholder="Type here..." />
+        <h2>Dictionary</h2>
+        <input className="input1" onChange={updateKeyword} type="search" placeholder="Type here..." />
         <input type="submit" value="Search" />
       </form>
 
-      <p className="prelouge">Every word has a mening, find it here!</p>
+      <p className="prelouge">🔼 Every word has a mening, find it here 🔼</p>
   </div>
   )
 }

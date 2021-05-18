@@ -12,7 +12,7 @@ return(
 
         {props.results.meanings.map(function(meaning, index){
             return(
-                <div key={index}>
+                <div key={index}> <hr />
                     <Meaning meaning={meaning}/>
                 </div>
             )
