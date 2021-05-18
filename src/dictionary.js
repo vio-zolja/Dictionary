@@ -51,7 +51,7 @@ if(ready){
         <input type="submit" value="Search" />
       </form>
 
-      <p className="prelouge">🔼 Every word has a mening, find it here 🔼</p>
+      <p className="prelouge">🔼 Every word has a meaning, find it here 🔼</p>
   </div>
   )
 }
