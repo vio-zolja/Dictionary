@@ -7,11 +7,7 @@ function App() {
     <div className="container">
 
       <Dictionary />
-
-      <header>
-        <p className="prelouge">Every word has a mening, find it here!</p>
-      </header>
-
+      
     </div>
     </div>
   );

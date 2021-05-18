@@ -8,6 +8,7 @@ export default function Dictionary(){
     let [results,setResults] = useState(null)
 
     function handleResponse(response) {
+      console.log(response)
       setResults(response.data[0]);
     }
 
@@ -48,6 +49,8 @@ if(ready){
         <input onChange={updateKeyword} type="search" placeholder="Type here..." />
         <input type="submit" value="Search" />
       </form>
+
+      <p className="prelouge">Every word has a mening, find it here!</p>
   </div>
   )
 }

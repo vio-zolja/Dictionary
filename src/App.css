@@ -46,12 +46,16 @@ h1:hover{
   color:rgba(0, 0, 0, 0.575)
 }
 
-.wordkind{
+h4{
   margin: 5% 0 0 0;
   color:gray;
 }
 
 .definition{
   color:black;
-  font-size:larger
+  font-weight:bolder
+}
+
+.example{
+  font-style: italic;
 }
