@@ -7,8 +7,8 @@ export default function Dictionary(){
     let [keyword, setKeyword] = useState("")
     let [results,setResults] = useState(null)
 
-    function handleResponse(response){
-      setResults(response.data[0])
+    function handleResponse(response) {
+      setResults(response.data[0]);
     }
 
     function search(event){
@@ -35,7 +35,7 @@ if(ready){
 
         </div>
 
-        <Ergebnisse props={results} />
+        <Ergebnisse results={results} />
       </div>
     )
 
