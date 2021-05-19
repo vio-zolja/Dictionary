@@ -72,3 +72,7 @@ h4{
 .example{
   font-style: italic;
 }
+
+.synonyms{
+  list-style-type: none;
+}

@@ -9,7 +9,6 @@ console.log(`ok`)
 
 return(
     <div>
-
         {props.results.meanings.map(function(meaning, index){
             return(
                 <div key={index}> <hr />

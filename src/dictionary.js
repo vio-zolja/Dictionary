@@ -27,13 +27,16 @@ export default function Dictionary(){
 if(ready){
   return(
       <div>
+        <h2>Dictionary</h2>
+        
+
         <div className="form">
 
           <form onSubmit={search}>
-          <h2>Dictionary</h2>
+          
             <input className="input1" onChange={updateKeyword} type="search" placeholder="Type here..." />
             <input type="submit" value="Search" />
-          </form>
+          </form>          
 
         </div>
         <Ergebnisse results={results} />
