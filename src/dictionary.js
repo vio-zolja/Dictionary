@@ -35,7 +35,7 @@ if(ready){
           <form onSubmit={search}>
           
             <input className="input1" onChange={updateKeyword} type="search" placeholder="Type here..." />
-            <input type="submit" value="Search" />
+            <input className="input2" type="submit" value="Search" />
           </form>          
 
         </div>
@@ -51,7 +51,7 @@ if(ready){
       <form onSubmit={search}>
         <h2>Dictionary</h2>
         <input className="input1" onChange={updateKeyword} type="search" placeholder="Type here..." />
-        <input type="submit" value="Search" />
+        <input className="input2" type="submit" value="Search" />
       </form>
 
       <p className="prelouge">🔼 Every word has a meaning, find it here 🔼</p>

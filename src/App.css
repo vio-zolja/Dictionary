@@ -5,6 +5,14 @@ body{
 h2{
   font-weight: 350;
 }
+.TheWord{
+ margin: 25px 0 0 0;
+ font-weight: 1000;
+}
+
+.phonetic{
+  margin: 0 0 25px 0;
+}
 
 .App{
   font-family:'Montserrat', sans-serif;
@@ -35,6 +43,11 @@ input{
 
 .input1{
   width: 325px;
+}
+
+.input2{
+  position:relative;
+  margin: -60px
 }
 
 header{
